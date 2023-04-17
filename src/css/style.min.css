@@ -1,0 +1,298 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* header
+=====================================*/
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 48px 40px 0 40px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__item {
+  margin-right: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+/*===================================================*/
+/* intro
+==================================================*/
+.intro {
+  height: 100vh;
+  background-image: url("../img/introBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.intro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: "Inter";
+  padding-top: 280px;
+}
+
+.intro__inner .logo {
+  padding-bottom: 33px;
+}
+
+.intro__inner .main__title {
+  padding-bottom: 24px;
+  font-size: 96px;
+  font-weight: 700px;
+}
+
+.intro__inner .main__description {
+  font-size: 32px;
+  padding-bottom: 48px;
+}
+
+/* Button style
+========================================*/
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  border: solid 2px white;
+  text-transform: uppercase;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+/*=================================================*/
+/* Benefits
+============================================*/
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../img/bgbg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 144px 0;
+}
+
+.benefits .leftlist {
+  list-style-type: none;
+}
+
+.benefits .rightlist {
+  list-style-type: none;
+}
+
+.itemlf {
+  padding-bottom: 48px;
+}
+
+.itemlf__content {
+  width: 272px;
+  position: relative;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+}
+
+.itemlf__content--one::after {
+  content: url("../img/indoor.png");
+  position: absolute;
+  right: -71px;
+  top: 0;
+  left: auto;
+}
+
+.itemlf__content--two::after {
+  content: url("../img/petfriendly.png");
+  position: absolute;
+  right: -71px;
+  top: 0;
+  left: auto;
+}
+
+.itemlf__content--three::after {
+  content: url("../img/tekaaway.png");
+  position: absolute;
+  right: -71px;
+  top: 0;
+  left: auto;
+}
+
+.itemlf__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.itemlf__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.itemrl {
+  padding-bottom: 48px;
+}
+
+.itemrl__content {
+  width: 272px;
+  position: relative;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+}
+
+.itemrl__content--one::before {
+  content: url("../img/wheelchair.png");
+  position: absolute;
+  right: auto;
+  top: 0;
+  left: -80px;
+}
+
+.itemrl__content--two::before {
+  content: url("../img/veganoptions.png");
+  position: absolute;
+  right: auto;
+  top: 0;
+  left: -80px;
+}
+
+.itemrl__content--three::before {
+  content: url("../img/cyclistfriendly.png");
+  position: absolute;
+  right: auto;
+  top: 0;
+  left: -80px;
+}
+
+.itemrl__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.itemrl__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*=======================================================*/
+/* About 
+=======================================================*/
+.about {
+  height: 432px;
+  background-image: url("../img/about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 90px;
+}
+
+.about__title {
+  font-size: 40px;
+  padding-bottom: 24px;
+}
+
+.about__title::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid;
+  color: #ffffffff;
+  width: 189px;
+  padding-top: 24px;
+  margin: 0 auto;
+}
+
+.about__description {
+  font-size: 16px;
+  padding-bottom: 48px;
+}
+
+/*===================================*/
+/*# sourceMappingURL=style.min.css.map */
