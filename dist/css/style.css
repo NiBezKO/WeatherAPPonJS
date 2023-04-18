@@ -62,9 +62,11 @@ main {
   transform: translateY(2px);
 }
 
-.weather__img {
-  width: 234px;
-  height: 265px;
+.weather__image {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
 }
 .weather__info {
   display: flex;
